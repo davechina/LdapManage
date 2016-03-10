@@ -254,7 +254,7 @@ class Privileged(User):
 
         gidnumber = g_attr.get('gidNumber')
         uidnumber = self._get_max_uid() + 1
-        mail = ''.join([username, '@ele.me'])
+        mail = ''.join([username, '@example.com'])
         home = ''.join(['/home', username])
 
         dn = ''.join(['uid=%s,' % username, 'ou=Account,', self.base])
