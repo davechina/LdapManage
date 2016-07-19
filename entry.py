@@ -7,7 +7,7 @@ from ldap3 import (HASHED_SALTED_SHA, LDAPBindError,
                    LDAPPasswordIsMandatoryError)
 
 from passport.utils.util import to_str, b64_decode, compare_hmac
-from passport.utils.ldap.ldap import LdapQuery
+from .ldap import LdapQuery
 from .ldap_errs import LdapAccessError, LdapParamsError, LdapModifyError
 
 __author__ = "lqs"
